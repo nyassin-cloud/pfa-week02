@@ -1,0 +1,1 @@
+The loop is for frame in range(simulation_start, end+1):. Depending on the user’s animation range, it calculates the effect for each frame. If the chosen range is 1–100, it repeats the movement and collision calculations for each of those frames. This creates the weather animation across that range.
