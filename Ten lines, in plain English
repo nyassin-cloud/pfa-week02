@@ -1,0 +1,10 @@
+"widthHeight=(620, 850))" :Those numbers are controlling the GUI window's size.
+"cmds.text(label='Bake the playback range. Each tab creates its own weather layer": I wanted different effects to play simultaneously, with each effect’s baked animation alongside the others.
+"import maya.cmds as cmds": opens up maya
+"cmds.button(label='Capture selected static polygon colliders', command=self.capture)": not sure what this does
+"self.collider_label = cmds.text(label='No colliders captured.')": This is kind of self explanatory, it displays a message saying no collision objects have been captured yet.
+"cmds.text(label='Colliders are sampled at range start. Regenerate after scene edits.')": This tells the user to regenerate the weather after editing collision objects, so the effect uses those changes.
+"c['color'] = cmds.colorSliderGrp(label='Color', rgbValue=color)": It adds a color control so the user can change the particles’ color.
+"c['collision'] = cmds.checkBox(label='Collide with captured polygon meshes', value=False)": This adds a checkbox that lets the user choose whether the effect collides with objects in the scene.
+"cmds.button(label='Clear ' + name, command=partial(self.clear, name))": Adds a clear button for a specific tab. It removes that tab’s effect without clearing the other weather types.
+c['ground'] = cmds.checkBox(label='Also collide with base ground plane', value=True): This adds a checkbox that lets the effect collide with the ground, so the particles can hit it.
